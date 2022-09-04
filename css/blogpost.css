@@ -1,0 +1,46 @@
+
+.home-articles{
+    padding: 4rem;
+    background-color: rgb(222 216 216 / 50%);
+    margin-top: 25px;
+    position: relative;
+}
+.home-articles h2{
+    font-size: 30px;
+    text-shadow: rgb(54, 52, 54);
+}
+.home-article{
+    display: flex;
+    margin: 25px;
+    padding: 26px;
+    background-color: rgb(255, 255, 255);
+  }
+  .home-article-img{
+      width: 300px;
+    }
+  .home-article-img img{
+      width:300px;
+  }
+  .home-article-content{
+      align-self: center;
+      padding: 0px 25px;
+  }
+  .home-article-content a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+  }
+@media screen and (max-width:768px){
+    .home-articles {
+        padding: 6rem 0rem;
+    }
+    .home-article{
+        flex-direction: column;
+    }
+    .home-article-img img {
+        width: 275px;
+    }
+    .home-article-content {
+        align-self: auto;
+    }
+}

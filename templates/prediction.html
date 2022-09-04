@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='styles.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Calorie </title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h2 class="logo-text" style="font-family:'serif'; font-size:45px;"><B><I> SARVAGYA </I></B></h2>
+        </div>
+        <!-- <div class="links">
+          <a href="./mscbot/index.html"><i style="color:blue; font-size:20px">👉(Talk to our bot)👈</i></a>
+            <a href="about.php">About Us</a>
+            <a href="blogpost.php">Blogs</a>
+            <a href="videos.php">Nutrition guide
+            <i style="font-size:10px">(FAQs)</i></a>
+            <a href="http://127.0.0.1:5000/Segmentor/">Calorie
+          <i style="font-size:10px">Counter</i></a>
+          <a href="bmi.php" >BMI
+          <i style=" font-size:10px">Calculator</i></a>
+
+        </div> -->
+    </div>
+    <p id="heading">Stay FIT!! </p>
+    <br>
+    <div>
+    <form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">
+        <input class="input" type="file" value="Choose Image" name="file">
+        <input class="boxsub" type="submit" onclick="prediction()" enctype="multipart/form-data" method="POST">
+    </form>
+    </div>
+    <div id="prediction-text">
+        {{prediction_text}}
+    </div>
+    <center><div class="box">
+
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

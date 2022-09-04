@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/FEEDBACK.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>
+        Feedback From
+    </title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h4> <a class="logo-text" href="landing.php" style="font-family:'serif'; font-size:45px;"><B><I> SARVAGYA </I></B></a></h4>
+        </div>
+        <div class="links">
+          <a href="./mscbot/index.html"><i style="color:blue; font-size:20px">👉(Talk to our bot)👈</i></a>
+            <a href="about.php">About Us</a>
+            <a href="blogpost.php">Blogs</a>
+            <a href="videos.php">Nutrition guide
+            <i style="font-size:10px">(FAQs)</i></a>
+          <a href="bmi.php" >BMI
+          <i style=" font-size:10px">Calculator</i></a> 
+          <a href="http://127.0.0.1:5000/Segmentor/">Calorie
+            <i style="font-size:10px">Counter</i></a>
+        </div>
+    </div>
+
+<div class="wrapper">
+  <h2>Feedback Form</h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+    <div class="input_field">
+        <input type="text" placeholder="First Name" id="fname">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Last Name" id="lname">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Phone" id="phone">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Your Feedback" id="yourfeedback"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
